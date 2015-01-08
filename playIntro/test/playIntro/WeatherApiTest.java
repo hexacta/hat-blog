@@ -18,7 +18,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 public class WeatherApiTest {
 	
     @Test
-    public void aTest() {
+    public void whenApiIsCalledAGoodResponseIsReceived() {
 
 		running(testServer(9000, fakeApplication(inMemoryDatabase("test"))), new Runnable() {
 			public void run() {
